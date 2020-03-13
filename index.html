@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script type="text/javascript" src="./js/scripts.js" defer></script>
+</head>
+
+<body>
+    <h1>Hangman</h1>
+
+    <!-- the input form -->
+    <form id="formGet" action="#">
+        <input id="letter" type="text">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- the guessed letter and canvas sections -- A grid with 50-50 split -->
+    <section id="getword">
+
+        <!-- left column -- guessed letters and canvas -->
+        <section>
+            <!-- put the guessed letter above the canvas -->
+            <p id="letterguess"></p>
+
+            <!-- the gallows -->
+            <canvas id="hangCanvas"></canvas>
+        </section>
+
+        <!-- right column -- the secret word's section -->
+        <section id="wordStatus">Guesses
+
+            <!-- the secret word itself -->
+            <p id="guess"></p>
+
+        </section>
+
+    </section>
+
+</body>
+
+</html>
